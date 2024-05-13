@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        android:title="홈"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_chatting"
+        android:icon="@drawable/chatting"
+        android:enabled="true"
+        android:title="채팅"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_plus"
+        android:icon="@drawable/plus"
+        android:enabled="true"
+        android:title="게시글"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_story"
+        android:icon="@drawable/story"
+        android:enabled="true"
+        android:title="스토리"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_mypage"
+        android:icon="@drawable/mypage"
+        android:enabled="true"
+        android:title="마이페이지"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>
