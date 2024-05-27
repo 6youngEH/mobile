@@ -53,57 +53,26 @@
         <LinearLayout
             android:id="@+id/story_btn_division"
             android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_height="1dp"
             android:layout_below="@id/story_btn"
             android:background="@color/black"
             android:orientation="horizontal" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/story_constraint"
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_below="@id/story_btn_division">
-
-            <Button
-                android:id="@+id/story_btn_follow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="40dp"
-                android:text="팔로우"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/story_comment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="104dp"
-                android:text="2.9k"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/story_like"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
-                android:text="99.9k"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/story_comment" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+            android:id="@+id/recycle"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/story_btn_division"/>
         <LinearLayout
-            android:id="@+id/userPage_constraint_division"
+            android:id="@+id/story"
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_below="@id/story_constraint"
+            android:layout_height="1dp"
+            android:layout_below="@id/recycle"
             android:background="@color/black"
-            android:orientation="horizontal" />
+            android:orientation="horizontal"
+          />
+
+
     </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

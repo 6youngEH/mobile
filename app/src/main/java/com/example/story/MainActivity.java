@@ -10,8 +10,13 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(main_toolbar);
         getSupportActionBar().setTitle("취밋");
 
-        // BottomNavigationView 초기화 및 클릭 리스너 설정
+
+        // RecyclerView 설정
+
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -33,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, StoryActivity.class));
                     return true;
                 }
-                // 추가적인 아이템 클릭 처리를 여기에 추가할 수 있습니다.
+
+
                 return false;
             }
         });
@@ -45,4 +53,5 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.toolbar_navigation_main, menu);
         return true;
     }
+
 }
